@@ -1,14 +1,17 @@
-import React from 'react';
-import styled from 'styled-components/macro';
+import React from 'react'
+import styled from 'styled-components/macro'
 
 const Hero = () => {
   return (
     <Wrapper>
-      <HeroImage src="/images/hero-img.jpg" />
-      <Swoop src="/swoop.svg" />
+      <HeroImage
+        alt='Example of photos on this site, cat on black background'
+        src='/images/hero-img.jpg'
+      />
+      <Swoop alt='' src='/swoop.svg' />
     </Wrapper>
-  );
-};
+  )
+}
 
 const Wrapper = styled.section`
   position: relative;
@@ -18,14 +21,14 @@ const Wrapper = styled.section`
   justify-content: center;
   align-items: flex-end;
   background: hsl(0deg 0% 1%);
-`;
+`
 
 const HeroImage = styled.img`
   display: block;
   width: 500px;
   height: 500px;
   max-height: 100%;
-`;
+`
 
 const Swoop = styled.img`
   position: absolute;
@@ -37,6 +40,6 @@ const Swoop = styled.img`
   */
   bottom: -2px;
   width: 100%;
-`;
+`
 
-export default Hero;
+export default Hero
